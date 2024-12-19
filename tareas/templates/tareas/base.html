@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Tareas</title>
+</head>
+<body>
+    <header>
+        <h1>Gestión de Tareas</h1>
+        <nav>
+            <a href="{% url 'lista_tareas' %}">Ver tareas</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>© 2024 Gestión de Tareas</p>
+    </footer>
+</body>

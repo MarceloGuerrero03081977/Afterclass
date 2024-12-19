@@ -1,0 +1,13 @@
+{% extends 'tareas/base.html' %}
+
+{% block content %}
+    <h2>Lista de Tareas</h2>
+    <ul>
+        {% for tarea in tareas %}
+            <li>
+                <a href="{% url 'detalle_tarea' tarea.id %}">{{ tarea.titulo }}</a>
+                - {{ tarea.fecha_vencimiento }}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'tareas/base.html' %}
+
+{% block content %}
+    <h2>{{ tarea.titulo }}</h2>
+    <p>{{ tarea.descripcion }}</p>
+    <p><strong>Fecha de vencimiento:</strong> {{ tarea.fecha_vencimiento }}</p>
+
+    <h3>Notas:</h3>
+    <ul>
+        {% for nota in notas %}
+            <li>{{ nota.contenido }} ({{ nota.fecha }})</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
