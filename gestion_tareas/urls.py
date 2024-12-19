@@ -33,4 +33,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('tareas.urls')),  # Aquí incluimos las URLs de la app tareas
+
+    
 ]
